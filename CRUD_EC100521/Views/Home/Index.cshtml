@@ -1,0 +1,25 @@
+﻿@model List<CRUD_EC100521.Models.Empleado>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+<div class="card">
+    <h5>Lista de empleados</h5>
+    <div class="card-body">
+        <a class="btn btn-success btn-sm" asp-action="Empleado_Detalle" asp-controller="Home" asp-route-idEmpleado="0">Crear nuevo elemento</a>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre Completo</th>
+            <th>Nombre Completo</th>
+        </tr>
+    </thead>
+</table>
